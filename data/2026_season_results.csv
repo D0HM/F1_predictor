@@ -1,0 +1,309 @@
+Year,Round,EventName,Driver,Team,GridPosition,QualiPosition,RacePosition,Points,Status
+2026,1,Australian Grand Prix,ALB,Williams,15.0,15.0,12.0,0.0,Lapped
+2026,1,Australian Grand Prix,ALO,Aston Martin,17.0,17.0,18.0,0.0,Retired
+2026,1,Australian Grand Prix,ANT,Mercedes,2.0,2.0,2.0,18.0,Finished
+2026,1,Australian Grand Prix,BEA,Haas F1 Team,12.0,12.0,7.0,6.0,Lapped
+2026,1,Australian Grand Prix,BOR,Audi,10.0,10.0,9.0,2.0,Lapped
+2026,1,Australian Grand Prix,BOT,Cadillac,19.0,19.0,19.0,0.0,Retired
+2026,1,Australian Grand Prix,COL,Alpine,16.0,16.0,14.0,0.0,Lapped
+2026,1,Australian Grand Prix,GAS,Alpine,14.0,14.0,10.0,1.0,Lapped
+2026,1,Australian Grand Prix,HAD,Red Bull Racing,3.0,3.0,20.0,0.0,Retired
+2026,1,Australian Grand Prix,HAM,Ferrari,7.0,7.0,4.0,12.0,Finished
+2026,1,Australian Grand Prix,HUL,Audi,11.0,11.0,22.0,0.0,Did not start
+2026,1,Australian Grand Prix,LAW,Racing Bulls,8.0,8.0,13.0,0.0,Lapped
+2026,1,Australian Grand Prix,LEC,Ferrari,4.0,4.0,3.0,15.0,Finished
+2026,1,Australian Grand Prix,LIN,Racing Bulls,9.0,9.0,8.0,4.0,Lapped
+2026,1,Australian Grand Prix,NOR,McLaren,6.0,6.0,5.0,10.0,Finished
+2026,1,Australian Grand Prix,OCO,Haas F1 Team,13.0,13.0,11.0,0.0,Lapped
+2026,1,Australian Grand Prix,PER,Cadillac,18.0,18.0,16.0,0.0,Lapped
+2026,1,Australian Grand Prix,PIA,McLaren,5.0,5.0,21.0,0.0,Did not start
+2026,1,Australian Grand Prix,RUS,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,1,Australian Grand Prix,SAI,Williams,21.0,,15.0,0.0,Lapped
+2026,1,Australian Grand Prix,STR,Aston Martin,22.0,,17.0,0.0,Lapped
+2026,1,Australian Grand Prix,VER,Red Bull Racing,20.0,,6.0,8.0,Finished
+2026,2,Chinese Grand Prix,ALB,Williams,22.0,18.0,22.0,0.0,Did not start
+2026,2,Chinese Grand Prix,ALO,Aston Martin,18.0,19.0,17.0,0.0,Retired
+2026,2,Chinese Grand Prix,ANT,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,2,Chinese Grand Prix,BEA,Haas F1 Team,10.0,10.0,5.0,10.0,Finished
+2026,2,Chinese Grand Prix,BOR,Audi,16.0,16.0,21.0,0.0,Did not start
+2026,2,Chinese Grand Prix,BOT,Cadillac,19.0,20.0,13.0,0.0,Lapped
+2026,2,Chinese Grand Prix,COL,Alpine,12.0,12.0,10.0,1.0,Lapped
+2026,2,Chinese Grand Prix,GAS,Alpine,7.0,7.0,6.0,8.0,Finished
+2026,2,Chinese Grand Prix,HAD,Red Bull Racing,9.0,9.0,8.0,4.0,Finished
+2026,2,Chinese Grand Prix,HAM,Ferrari,3.0,3.0,3.0,15.0,Finished
+2026,2,Chinese Grand Prix,HUL,Audi,11.0,11.0,11.0,0.0,Lapped
+2026,2,Chinese Grand Prix,LAW,Racing Bulls,14.0,14.0,7.0,6.0,Finished
+2026,2,Chinese Grand Prix,LEC,Ferrari,4.0,4.0,4.0,12.0,Finished
+2026,2,Chinese Grand Prix,LIN,Racing Bulls,15.0,15.0,12.0,0.0,Lapped
+2026,2,Chinese Grand Prix,NOR,McLaren,6.0,6.0,20.0,0.0,Did not start
+2026,2,Chinese Grand Prix,OCO,Haas F1 Team,13.0,13.0,14.0,0.0,Lapped
+2026,2,Chinese Grand Prix,PER,Cadillac,21.0,22.0,15.0,0.0,Lapped
+2026,2,Chinese Grand Prix,PIA,McLaren,5.0,5.0,19.0,0.0,Did not start
+2026,2,Chinese Grand Prix,RUS,Mercedes,2.0,2.0,2.0,18.0,Finished
+2026,2,Chinese Grand Prix,SAI,Williams,17.0,17.0,9.0,2.0,Lapped
+2026,2,Chinese Grand Prix,STR,Aston Martin,20.0,21.0,18.0,0.0,Retired
+2026,2,Chinese Grand Prix,VER,Red Bull Racing,8.0,8.0,16.0,0.0,Retired
+2026,3,Japanese Grand Prix,ALB,Williams,17.0,17.0,20.0,0.0,Lapped
+2026,3,Japanese Grand Prix,ALO,Aston Martin,21.0,21.0,18.0,0.0,Lapped
+2026,3,Japanese Grand Prix,ANT,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,3,Japanese Grand Prix,BEA,Haas F1 Team,18.0,18.0,22.0,0.0,Retired
+2026,3,Japanese Grand Prix,BOR,Audi,9.0,9.0,13.0,0.0,Finished
+2026,3,Japanese Grand Prix,BOT,Cadillac,20.0,20.0,19.0,0.0,Lapped
+2026,3,Japanese Grand Prix,COL,Alpine,15.0,15.0,16.0,0.0,Finished
+2026,3,Japanese Grand Prix,GAS,Alpine,7.0,7.0,7.0,6.0,Finished
+2026,3,Japanese Grand Prix,HAD,Red Bull Racing,8.0,8.0,12.0,0.0,Finished
+2026,3,Japanese Grand Prix,HAM,Ferrari,6.0,6.0,6.0,8.0,Finished
+2026,3,Japanese Grand Prix,HUL,Audi,13.0,13.0,11.0,0.0,Finished
+2026,3,Japanese Grand Prix,LAW,Racing Bulls,14.0,14.0,9.0,2.0,Finished
+2026,3,Japanese Grand Prix,LEC,Ferrari,4.0,4.0,3.0,15.0,Finished
+2026,3,Japanese Grand Prix,LIN,Racing Bulls,10.0,10.0,14.0,0.0,Finished
+2026,3,Japanese Grand Prix,NOR,McLaren,5.0,5.0,5.0,10.0,Finished
+2026,3,Japanese Grand Prix,OCO,Haas F1 Team,12.0,12.0,10.0,1.0,Finished
+2026,3,Japanese Grand Prix,PER,Cadillac,19.0,19.0,17.0,0.0,Finished
+2026,3,Japanese Grand Prix,PIA,McLaren,3.0,3.0,2.0,18.0,Finished
+2026,3,Japanese Grand Prix,RUS,Mercedes,2.0,2.0,4.0,12.0,Finished
+2026,3,Japanese Grand Prix,SAI,Williams,16.0,16.0,15.0,0.0,Finished
+2026,3,Japanese Grand Prix,STR,Aston Martin,22.0,22.0,21.0,0.0,Retired
+2026,3,Japanese Grand Prix,VER,Red Bull Racing,11.0,11.0,8.0,4.0,Finished
+2026,4,Miami Grand Prix,ALB,Williams,15.0,15.0,10.0,1.0,Finished
+2026,4,Miami Grand Prix,ALO,Aston Martin,17.0,17.0,15.0,0.0,Lapped
+2026,4,Miami Grand Prix,ANT,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,4,Miami Grand Prix,BEA,Haas F1 Team,12.0,12.0,11.0,0.0,Lapped
+2026,4,Miami Grand Prix,BOR,Audi,21.0,21.0,12.0,0.0,Lapped
+2026,4,Miami Grand Prix,BOT,Cadillac,19.0,19.0,18.0,0.0,Lapped
+2026,4,Miami Grand Prix,COL,Alpine,8.0,8.0,7.0,6.0,Finished
+2026,4,Miami Grand Prix,GAS,Alpine,9.0,9.0,21.0,0.0,Retired
+2026,4,Miami Grand Prix,HAD,Red Bull Racing,22.0,22.0,22.0,0.0,Retired
+2026,4,Miami Grand Prix,HAM,Ferrari,6.0,6.0,6.0,8.0,Finished
+2026,4,Miami Grand Prix,HUL,Audi,10.0,10.0,19.0,0.0,Retired
+2026,4,Miami Grand Prix,LAW,Racing Bulls,11.0,11.0,20.0,0.0,Retired
+2026,4,Miami Grand Prix,LEC,Ferrari,3.0,3.0,8.0,4.0,Finished
+2026,4,Miami Grand Prix,LIN,Racing Bulls,16.0,16.0,14.0,0.0,Lapped
+2026,4,Miami Grand Prix,NOR,McLaren,4.0,4.0,2.0,18.0,Finished
+2026,4,Miami Grand Prix,OCO,Haas F1 Team,14.0,14.0,13.0,0.0,Lapped
+2026,4,Miami Grand Prix,PER,Cadillac,20.0,20.0,16.0,0.0,Lapped
+2026,4,Miami Grand Prix,PIA,McLaren,7.0,7.0,3.0,15.0,Finished
+2026,4,Miami Grand Prix,RUS,Mercedes,5.0,5.0,4.0,12.0,Finished
+2026,4,Miami Grand Prix,SAI,Williams,13.0,13.0,9.0,2.0,Finished
+2026,4,Miami Grand Prix,STR,Aston Martin,18.0,18.0,17.0,0.0,Lapped
+2026,4,Miami Grand Prix,VER,Red Bull Racing,2.0,2.0,5.0,10.0,Finished
+2026,5,Canadian Grand Prix,ALB,Williams,18.0,18.0,21.0,0.0,Retired
+2026,5,Canadian Grand Prix,ALO,Aston Martin,19.0,19.0,20.0,0.0,Retired
+2026,5,Canadian Grand Prix,ANT,Mercedes,2.0,2.0,1.0,25.0,Finished
+2026,5,Canadian Grand Prix,BEA,Haas F1 Team,16.0,16.0,10.0,1.0,Lapped
+2026,5,Canadian Grand Prix,BOR,Audi,13.0,13.0,13.0,0.0,Lapped
+2026,5,Canadian Grand Prix,BOT,Cadillac,21.0,22.0,16.0,0.0,Lapped
+2026,5,Canadian Grand Prix,COL,Alpine,10.0,10.0,6.0,8.0,Lapped
+2026,5,Canadian Grand Prix,GAS,Alpine,14.0,14.0,8.0,4.0,Lapped
+2026,5,Canadian Grand Prix,HAD,Red Bull Racing,7.0,7.0,5.0,10.0,Lapped
+2026,5,Canadian Grand Prix,HAM,Ferrari,5.0,5.0,2.0,18.0,Finished
+2026,5,Canadian Grand Prix,HUL,Audi,11.0,11.0,12.0,0.0,Lapped
+2026,5,Canadian Grand Prix,LAW,Racing Bulls,12.0,12.0,7.0,6.0,Lapped
+2026,5,Canadian Grand Prix,LEC,Ferrari,8.0,8.0,4.0,12.0,Finished
+2026,5,Canadian Grand Prix,LIN,Racing Bulls,9.0,9.0,22.0,0.0,Did not start
+2026,5,Canadian Grand Prix,NOR,McLaren,3.0,3.0,18.0,0.0,Retired
+2026,5,Canadian Grand Prix,OCO,Haas F1 Team,17.0,17.0,14.0,0.0,Lapped
+2026,5,Canadian Grand Prix,PER,Cadillac,20.0,20.0,17.0,0.0,Retired
+2026,5,Canadian Grand Prix,PIA,McLaren,4.0,4.0,11.0,0.0,Lapped
+2026,5,Canadian Grand Prix,RUS,Mercedes,1.0,1.0,19.0,0.0,Retired
+2026,5,Canadian Grand Prix,SAI,Williams,15.0,15.0,9.0,2.0,Lapped
+2026,5,Canadian Grand Prix,STR,Aston Martin,22.0,21.0,15.0,0.0,Lapped
+2026,5,Canadian Grand Prix,VER,Red Bull Racing,6.0,6.0,3.0,15.0,Finished
+2026,6,Monaco Grand Prix,ALB,Williams,11.0,11.0,8.0,4.0,Finished
+2026,6,Monaco Grand Prix,ALO,Aston Martin,21.0,21.0,10.0,1.0,Finished
+2026,6,Monaco Grand Prix,ANT,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,6,Monaco Grand Prix,BEA,Haas F1 Team,19.0,19.0,20.0,0.0,Retired
+2026,6,Monaco Grand Prix,BOR,Audi,16.0,16.0,11.0,0.0,Finished
+2026,6,Monaco Grand Prix,BOT,Cadillac,20.0,20.0,21.0,0.0,Retired
+2026,6,Monaco Grand Prix,COL,Alpine,14.0,14.0,14.0,0.0,Finished
+2026,6,Monaco Grand Prix,GAS,Alpine,9.0,9.0,7.0,6.0,Finished
+2026,6,Monaco Grand Prix,HAD,Red Bull Racing,5.0,5.0,3.0,15.0,Finished
+2026,6,Monaco Grand Prix,HAM,Ferrari,3.0,3.0,2.0,18.0,Finished
+2026,6,Monaco Grand Prix,HUL,Audi,13.0,13.0,13.0,0.0,Finished
+2026,6,Monaco Grand Prix,LAW,Racing Bulls,10.0,10.0,5.0,10.0,Finished
+2026,6,Monaco Grand Prix,LEC,Ferrari,4.0,4.0,17.0,0.0,Retired
+2026,6,Monaco Grand Prix,LIN,Racing Bulls,15.0,15.0,6.0,8.0,Finished
+2026,6,Monaco Grand Prix,NOR,McLaren,8.0,8.0,19.0,0.0,Retired
+2026,6,Monaco Grand Prix,OCO,Haas F1 Team,17.0,17.0,9.0,2.0,Finished
+2026,6,Monaco Grand Prix,PER,Cadillac,18.0,18.0,15.0,0.0,Finished
+2026,6,Monaco Grand Prix,PIA,McLaren,7.0,7.0,4.0,12.0,Finished
+2026,6,Monaco Grand Prix,RUS,Mercedes,6.0,6.0,12.0,0.0,Finished
+2026,6,Monaco Grand Prix,SAI,Williams,12.0,12.0,16.0,0.0,Retired
+2026,6,Monaco Grand Prix,STR,Aston Martin,22.0,22.0,18.0,0.0,Retired
+2026,6,Monaco Grand Prix,VER,Red Bull Racing,2.0,2.0,22.0,0.0,Retired
+2026,7,Barcelona Grand Prix,ALB,Williams,18.0,18.0,18.0,0.0,Lapped
+2026,7,Barcelona Grand Prix,ALO,Aston Martin,22.0,22.0,19.0,0.0,Retired
+2026,7,Barcelona Grand Prix,ANT,Mercedes,3.0,3.0,16.0,0.0,Retired
+2026,7,Barcelona Grand Prix,BEA,Haas F1 Team,15.0,15.0,17.0,0.0,Retired
+2026,7,Barcelona Grand Prix,BOR,Audi,12.0,12.0,11.0,0.0,Lapped
+2026,7,Barcelona Grand Prix,BOT,Cadillac,20.0,20.0,21.0,0.0,Retired
+2026,7,Barcelona Grand Prix,COL,Alpine,13.0,13.0,10.0,1.0,Lapped
+2026,7,Barcelona Grand Prix,GAS,Alpine,14.0,14.0,7.0,6.0,Lapped
+2026,7,Barcelona Grand Prix,HAD,Red Bull Racing,6.0,6.0,6.0,8.0,Lapped
+2026,7,Barcelona Grand Prix,HAM,Ferrari,2.0,2.0,1.0,25.0,Finished
+2026,7,Barcelona Grand Prix,HUL,Audi,9.0,9.0,20.0,0.0,Retired
+2026,7,Barcelona Grand Prix,LAW,Racing Bulls,8.0,8.0,8.0,4.0,Lapped
+2026,7,Barcelona Grand Prix,LEC,Ferrari,10.0,10.0,15.0,0.0,Retired
+2026,7,Barcelona Grand Prix,LIN,Racing Bulls,11.0,11.0,9.0,2.0,Lapped
+2026,7,Barcelona Grand Prix,NOR,McLaren,4.0,4.0,3.0,15.0,Finished
+2026,7,Barcelona Grand Prix,OCO,Haas F1 Team,17.0,17.0,13.0,0.0,Lapped
+2026,7,Barcelona Grand Prix,PER,Cadillac,19.0,19.0,14.0,0.0,Lapped
+2026,7,Barcelona Grand Prix,PIA,McLaren,7.0,7.0,5.0,10.0,Finished
+2026,7,Barcelona Grand Prix,RUS,Mercedes,1.0,1.0,2.0,18.0,Finished
+2026,7,Barcelona Grand Prix,SAI,Williams,16.0,16.0,12.0,0.0,Lapped
+2026,7,Barcelona Grand Prix,STR,Aston Martin,21.0,21.0,22.0,0.0,Retired
+2026,7,Barcelona Grand Prix,VER,Red Bull Racing,5.0,5.0,4.0,12.0,Finished
+2026,8,Austrian Grand Prix,ALB,Williams,18.0,18.0,17.0,0.0,Lapped
+2026,8,Austrian Grand Prix,ALO,Aston Martin,21.0,21.0,18.0,0.0,Lapped
+2026,8,Austrian Grand Prix,ANT,Mercedes,4.0,4.0,3.0,15.0,Finished
+2026,8,Austrian Grand Prix,BEA,Haas F1 Team,13.0,13.0,14.0,0.0,Lapped
+2026,8,Austrian Grand Prix,BOR,Audi,12.0,12.0,11.0,0.0,Lapped
+2026,8,Austrian Grand Prix,BOT,Cadillac,20.0,20.0,22.0,0.0,Retired
+2026,8,Austrian Grand Prix,COL,Alpine,16.0,16.0,15.0,0.0,Lapped
+2026,8,Austrian Grand Prix,GAS,Alpine,11.0,11.0,13.0,0.0,Lapped
+2026,8,Austrian Grand Prix,HAD,Red Bull Racing,8.0,8.0,6.0,8.0,Finished
+2026,8,Austrian Grand Prix,HAM,Ferrari,3.0,3.0,5.0,10.0,Finished
+2026,8,Austrian Grand Prix,HUL,Audi,14.0,14.0,12.0,0.0,Lapped
+2026,8,Austrian Grand Prix,LAW,Racing Bulls,9.0,9.0,9.0,2.0,Lapped
+2026,8,Austrian Grand Prix,LEC,Ferrari,2.0,2.0,8.0,4.0,Finished
+2026,8,Austrian Grand Prix,LIN,Racing Bulls,10.0,10.0,10.0,1.0,Lapped
+2026,8,Austrian Grand Prix,NOR,McLaren,6.0,6.0,7.0,6.0,Finished
+2026,8,Austrian Grand Prix,OCO,Haas F1 Team,15.0,15.0,16.0,0.0,Lapped
+2026,8,Austrian Grand Prix,PER,Cadillac,19.0,19.0,21.0,0.0,Retired
+2026,8,Austrian Grand Prix,PIA,McLaren,7.0,7.0,4.0,12.0,Finished
+2026,8,Austrian Grand Prix,RUS,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,8,Austrian Grand Prix,SAI,Williams,17.0,17.0,20.0,0.0,Retired
+2026,8,Austrian Grand Prix,STR,Aston Martin,22.0,22.0,19.0,0.0,Retired
+2026,8,Austrian Grand Prix,VER,Red Bull Racing,5.0,5.0,2.0,18.0,Finished
+2026,9,British Grand Prix,ALB,Williams,16.0,16.0,21.0,0.0,Retired
+2026,9,British Grand Prix,ALO,Aston Martin,21.0,22.0,18.0,0.0,Lapped
+2026,9,British Grand Prix,ANT,Mercedes,1.0,1.0,15.0,0.0,Finished
+2026,9,British Grand Prix,BEA,Haas F1 Team,13.0,14.0,12.0,0.0,Finished
+2026,9,British Grand Prix,BOR,Audi,11.0,11.0,8.0,4.0,Finished
+2026,9,British Grand Prix,BOT,Cadillac,18.0,18.0,16.0,0.0,Finished
+2026,9,British Grand Prix,COL,Alpine,19.0,19.0,9.0,2.0,Finished
+2026,9,British Grand Prix,GAS,Alpine,15.0,12.0,10.0,1.0,Finished
+2026,9,British Grand Prix,HAD,Red Bull Racing,5.0,5.0,5.0,10.0,Finished
+2026,9,British Grand Prix,HAM,Ferrari,3.0,3.0,3.0,15.0,Finished
+2026,9,British Grand Prix,HUL,Audi,12.0,13.0,22.0,0.0,Retired
+2026,9,British Grand Prix,LAW,Racing Bulls,10.0,10.0,6.0,8.0,Finished
+2026,9,British Grand Prix,LEC,Ferrari,2.0,2.0,1.0,25.0,Finished
+2026,9,British Grand Prix,LIN,Racing Bulls,9.0,9.0,7.0,6.0,Finished
+2026,9,British Grand Prix,NOR,McLaren,6.0,6.0,4.0,12.0,Finished
+2026,9,British Grand Prix,OCO,Haas F1 Team,17.0,17.0,13.0,0.0,Finished
+2026,9,British Grand Prix,PER,Cadillac,20.0,20.0,14.0,0.0,Finished
+2026,9,British Grand Prix,PIA,McLaren,8.0,8.0,11.0,0.0,Finished
+2026,9,British Grand Prix,RUS,Mercedes,4.0,4.0,2.0,18.0,Finished
+2026,9,British Grand Prix,SAI,Williams,14.0,15.0,17.0,0.0,Lapped
+2026,9,British Grand Prix,STR,Aston Martin,22.0,21.0,19.0,0.0,Lapped
+2026,9,British Grand Prix,VER,Red Bull Racing,7.0,7.0,20.0,0.0,Retired
+2026,10,Belgian Grand Prix,ALB,Williams,15.0,17.0,15.0,0.0,Finished
+2026,10,Belgian Grand Prix,ALO,Aston Martin,22.0,21.0,19.0,0.0,Lapped
+2026,10,Belgian Grand Prix,ANT,Mercedes,1.0,1.0,1.0,25.0,Finished
+2026,10,Belgian Grand Prix,BEA,Haas F1 Team,14.0,16.0,14.0,0.0,Finished
+2026,10,Belgian Grand Prix,BOR,Audi,8.0,9.0,8.0,4.0,Finished
+2026,10,Belgian Grand Prix,BOT,Cadillac,17.0,19.0,18.0,0.0,Lapped
+2026,10,Belgian Grand Prix,COL,Alpine,11.0,13.0,10.0,1.0,Finished
+2026,10,Belgian Grand Prix,GAS,Alpine,10.0,12.0,11.0,0.0,Finished
+2026,10,Belgian Grand Prix,HAD,Red Bull Racing,21.0,10.0,6.0,8.0,Finished
+2026,10,Belgian Grand Prix,HAM,Ferrari,5.0,6.0,4.0,12.0,Finished
+2026,10,Belgian Grand Prix,HUL,Audi,12.0,14.0,13.0,0.0,Finished
+2026,10,Belgian Grand Prix,LAW,Racing Bulls,9.0,11.0,12.0,0.0,Finished
+2026,10,Belgian Grand Prix,LEC,Ferrari,4.0,5.0,2.0,18.0,Finished
+2026,10,Belgian Grand Prix,LIN,Racing Bulls,7.0,8.0,9.0,2.0,Finished
+2026,10,Belgian Grand Prix,NOR,McLaren,13.0,3.0,7.0,6.0,Finished
+2026,10,Belgian Grand Prix,OCO,Haas F1 Team,16.0,18.0,17.0,0.0,Finished
+2026,10,Belgian Grand Prix,PER,Cadillac,18.0,20.0,21.0,0.0,Retired
+2026,10,Belgian Grand Prix,PIA,McLaren,6.0,7.0,5.0,10.0,Finished
+2026,10,Belgian Grand Prix,RUS,Mercedes,3.0,4.0,22.0,0.0,Retired
+2026,10,Belgian Grand Prix,SAI,Williams,19.0,15.0,16.0,0.0,Finished
+2026,10,Belgian Grand Prix,STR,Aston Martin,20.0,22.0,20.0,0.0,Retired
+2026,10,Belgian Grand Prix,VER,Red Bull Racing,2.0,2.0,3.0,15.0,Finished
+2026,11,Hungarian Grand Prix,ALB,Williams,19.0,19.0,17.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,ALO,Aston Martin,16.0,16.0,14.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,ANT,Mercedes,7.0,4.0,3.0,15.0,Finished
+2026,11,Hungarian Grand Prix,BEA,Haas F1 Team,17.0,17.0,19.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,BOR,Audi,14.0,14.0,11.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,BOT,Cadillac,21.0,21.0,22.0,0.0,Retired
+2026,11,Hungarian Grand Prix,COL,Alpine,13.0,13.0,15.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,GAS,Alpine,12.0,12.0,12.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,HAD,Red Bull Racing,8.0,8.0,6.0,8.0,Finished
+2026,11,Hungarian Grand Prix,HAM,Ferrari,5.0,2.0,5.0,10.0,Finished
+2026,11,Hungarian Grand Prix,HUL,Audi,10.0,10.0,9.0,2.0,Lapped
+2026,11,Hungarian Grand Prix,LAW,Racing Bulls,11.0,11.0,8.0,4.0,Lapped
+2026,11,Hungarian Grand Prix,LEC,Ferrari,2.0,3.0,4.0,12.0,Finished
+2026,11,Hungarian Grand Prix,LIN,Racing Bulls,9.0,9.0,10.0,1.0,Lapped
+2026,11,Hungarian Grand Prix,NOR,McLaren,1.0,1.0,1.0,25.0,Finished
+2026,11,Hungarian Grand Prix,OCO,Haas F1 Team,15.0,15.0,16.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,PER,Cadillac,22.0,22.0,21.0,0.0,Retired
+2026,11,Hungarian Grand Prix,PIA,McLaren,3.0,5.0,20.0,0.0,Retired
+2026,11,Hungarian Grand Prix,RUS,Mercedes,6.0,7.0,7.0,6.0,Finished
+2026,11,Hungarian Grand Prix,SAI,Williams,18.0,18.0,18.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,STR,Aston Martin,20.0,20.0,13.0,0.0,Lapped
+2026,11,Hungarian Grand Prix,VER,Red Bull Racing,4.0,6.0,2.0,18.0,Finished
+2026,12,Dutch Grand Prix,ALB,Williams,16.0,16.0,17.0,0.0,Retired
+2026,12,Dutch Grand Prix,ALO,Aston Martin,18.0,18.0,9.0,2.0,Lapped
+2026,12,Dutch Grand Prix,ANT,Mercedes,3.0,3.0,2.0,18.0,Finished
+2026,12,Dutch Grand Prix,BEA,Haas F1 Team,20.0,20.0,21.0,0.0,Retired
+2026,12,Dutch Grand Prix,BOR,Audi,9.0,9.0,13.0,0.0,Lapped
+2026,12,Dutch Grand Prix,BOT,Cadillac,21.0,21.0,18.0,0.0,Retired
+2026,12,Dutch Grand Prix,COL,Alpine,14.0,14.0,14.0,0.0,Lapped
+2026,12,Dutch Grand Prix,GAS,Alpine,11.0,11.0,10.0,1.0,Lapped
+2026,12,Dutch Grand Prix,HAM,Ferrari,5.0,5.0,4.0,12.0,Finished
+2026,12,Dutch Grand Prix,HUL,Audi,13.0,13.0,8.0,4.0,Lapped
+2026,12,Dutch Grand Prix,LAW,Red Bull Racing,8.0,8.0,7.0,6.0,Finished
+2026,12,Dutch Grand Prix,LEC,Ferrari,6.0,6.0,5.0,10.0,Finished
+2026,12,Dutch Grand Prix,LIN,Racing Bulls,10.0,10.0,12.0,0.0,Lapped
+2026,12,Dutch Grand Prix,NOR,McLaren,1.0,1.0,1.0,25.0,Finished
+2026,12,Dutch Grand Prix,OCO,Haas F1 Team,15.0,15.0,19.0,0.0,Retired
+2026,12,Dutch Grand Prix,PER,Cadillac,22.0,22.0,15.0,0.0,Lapped
+2026,12,Dutch Grand Prix,PIA,McLaren,4.0,4.0,6.0,8.0,Finished
+2026,12,Dutch Grand Prix,RUS,Mercedes,2.0,2.0,3.0,15.0,Finished
+2026,12,Dutch Grand Prix,SAI,Williams,17.0,17.0,16.0,0.0,Lapped
+2026,12,Dutch Grand Prix,STR,Aston Martin,19.0,19.0,20.0,0.0,Retired
+2026,12,Dutch Grand Prix,TSU,Racing Bulls,12.0,12.0,11.0,0.0,Lapped
+2026,12,Dutch Grand Prix,VER,Red Bull Racing,7.0,7.0,22.0,0.0,Retired
+2026,13,Italian Grand Prix,ALB,Williams,20.0,18.0,17.0,0.0,Lapped
+2026,13,Italian Grand Prix,ALO,Aston Martin,21.0,21.0,21.0,0.0,Retired
+2026,13,Italian Grand Prix,ANT,Mercedes,19.0,7.0,1.0,25.0,Finished
+2026,13,Italian Grand Prix,BEA,Haas F1 Team,11.0,12.0,15.0,0.0,Finished
+2026,13,Italian Grand Prix,BOR,Audi,10.0,11.0,11.0,0.0,Finished
+2026,13,Italian Grand Prix,BOT,Cadillac,16.0,19.0,19.0,0.0,Lapped
+2026,13,Italian Grand Prix,COL,Alpine,7.0,8.0,9.0,2.0,Finished
+2026,13,Italian Grand Prix,GAS,Alpine,1.0,1.0,7.0,6.0,Finished
+2026,13,Italian Grand Prix,HAM,Ferrari,4.0,5.0,6.0,8.0,Finished
+2026,13,Italian Grand Prix,HUL,Audi,12.0,13.0,12.0,0.0,Finished
+2026,13,Italian Grand Prix,LAW,Red Bull Racing,22.0,14.0,14.0,0.0,Finished
+2026,13,Italian Grand Prix,LEC,Ferrari,3.0,4.0,22.0,0.0,Retired
+2026,13,Italian Grand Prix,LIN,Racing Bulls,9.0,10.0,8.0,4.0,Finished
+2026,13,Italian Grand Prix,NOR,McLaren,8.0,9.0,4.0,12.0,Finished
+2026,13,Italian Grand Prix,OCO,Haas F1 Team,14.0,16.0,16.0,0.0,Lapped
+2026,13,Italian Grand Prix,PER,Cadillac,17.0,20.0,18.0,0.0,Lapped
+2026,13,Italian Grand Prix,PIA,McLaren,6.0,3.0,5.0,10.0,Finished
+2026,13,Italian Grand Prix,RUS,Mercedes,2.0,2.0,2.0,18.0,Finished
+2026,13,Italian Grand Prix,SAI,Williams,13.0,15.0,13.0,0.0,Finished
+2026,13,Italian Grand Prix,STR,Aston Martin,18.0,22.0,20.0,0.0,Retired
+2026,13,Italian Grand Prix,TSU,Racing Bulls,15.0,17.0,10.0,1.0,Finished
+2026,13,Italian Grand Prix,VER,Red Bull Racing,5.0,6.0,3.0,15.0,Finished
+2026,14,Spanish Grand Prix,ALB,Williams,16.0,16.0,15.0,0.0,Lapped
+2026,14,Spanish Grand Prix,ALO,Aston Martin,17.0,18.0,17.0,0.0,Lapped
+2026,14,Spanish Grand Prix,ANT,Mercedes,2.0,2.0,1.0,25.0,Finished
+2026,14,Spanish Grand Prix,BEA,Haas F1 Team,22.0,,16.0,0.0,Lapped
+2026,14,Spanish Grand Prix,BOR,Audi,12.0,12.0,13.0,0.0,Lapped
+2026,14,Spanish Grand Prix,BOT,Cadillac,19.0,20.0,18.0,0.0,Lapped
+2026,14,Spanish Grand Prix,COL,Alpine,9.0,9.0,7.0,6.0,Finished
+2026,14,Spanish Grand Prix,GAS,Alpine,14.0,14.0,12.0,0.0,Lapped
+2026,14,Spanish Grand Prix,HAM,Ferrari,4.0,4.0,22.0,0.0,Retired
+2026,14,Spanish Grand Prix,HUL,Audi,11.0,11.0,10.0,1.0,Lapped
+2026,14,Spanish Grand Prix,LAW,Red Bull Racing,8.0,8.0,6.0,8.0,Finished
+2026,14,Spanish Grand Prix,LEC,Ferrari,5.0,5.0,4.0,12.0,Finished
+2026,14,Spanish Grand Prix,LIN,Racing Bulls,10.0,10.0,9.0,2.0,Lapped
+2026,14,Spanish Grand Prix,NOR,McLaren,1.0,1.0,3.0,15.0,Finished
+2026,14,Spanish Grand Prix,OCO,Haas F1 Team,13.0,13.0,11.0,0.0,Lapped
+2026,14,Spanish Grand Prix,PER,Cadillac,18.0,19.0,20.0,0.0,Retired
+2026,14,Spanish Grand Prix,PIA,McLaren,7.0,7.0,8.0,4.0,Finished
+2026,14,Spanish Grand Prix,RUS,Mercedes,6.0,6.0,5.0,10.0,Finished
+2026,14,Spanish Grand Prix,SAI,Williams,20.0,17.0,19.0,0.0,Retired
+2026,14,Spanish Grand Prix,STR,Aston Martin,21.0,,21.0,0.0,Retired
+2026,14,Spanish Grand Prix,TSU,Racing Bulls,15.0,15.0,14.0,0.0,Lapped
+2026,14,Spanish Grand Prix,VER,Red Bull Racing,3.0,3.0,2.0,18.0,Finished

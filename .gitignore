@@ -1,24 +1,14 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-
-# Virtual environment
-.venv/
-venv/
-env/
 
 # FastF1 cache
 cache/
 .fastf1/
 
-# Generated data
-data/*.csv
-
-# Generated model files
-models/*.pkl
-
-# Environment variables / secrets
+# Environment / secrets
+.venv/
+venv/
 .env
 
 # IDE
