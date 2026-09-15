@@ -1,21 +1,23 @@
 Driver,Team,DriverAvgQuali_form,DriverAvgRace_form,TeamAvgRace_form
-ALO,Aston Martin,7.5,7.75,8.0
-STR,Aston Martin,10.25,8.25,8.0
-ANT,Mercedes,6.0,5.75,5.0
-RUS,Mercedes,4.75,4.25,5.0
 PIA,McLaren,3.5,4.75,4.625
 NOR,McLaren,4.75,4.5,4.625
-BEA,Haas,13.5,14.25,14.75
-OCO,Haas,16.5,15.25,14.75
-BOR,Audi,16.0,16.0,16.25
-HUL,Audi,17.0,16.5,16.25
-COL,Alpine,18.0,17.75,17.625
-GAS,Alpine,17.5,17.5,17.625
+ANT,Mercedes,6.0,5.75,5.0
+RUS,Mercedes,4.75,4.25,5.0
+HAD,Red Bull Racing,3.0,3.0,3.875
+VER,Red Bull Racing,3.25,4.75,3.875
 HAM,Ferrari,4.75,5.25,7.625
 LEC,Ferrari,9.25,10.0,7.625
 SAI,Williams,13.25,15.0,13.625
 ALB,Williams,13.0,12.25,13.625
 LIN,RB,13.0,13.5,13.625
 LAW,RB,15.25,13.75,13.625
-HAD,Red Bull Racing,3.0,3.0,3.875
-VER,Red Bull Racing,3.25,4.75,3.875
+ALO,Aston Martin,7.5,7.75,8.0
+STR,Aston Martin,10.25,8.25,8.0
+BEA,Haas,13.5,14.25,14.75
+OCO,Haas,16.5,15.25,14.75
+BOR,Audi,16.0,16.0,16.25
+HUL,Audi,17.0,16.5,16.25
+COL,Alpine,18.0,17.75,17.625
+GAS,Alpine,17.5,17.5,17.625
+BOT,Cadillac,20,20,20
+PER,Cadillac,19,20,19.5

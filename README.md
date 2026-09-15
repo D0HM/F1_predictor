@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32239994/README.md)
 # F1 2026 Race Predictor
 
 A Flask-based Formula 1 prediction web application that uses **FastF1 historical data** and machine-learning models to predict the 2026 qualifying and race order.
@@ -46,13 +45,13 @@ The project should have a structure similar to:
 f1-predictor/
 │
 ├── app.py
+├── collect_data.py
+├── index.html
+├── app.js
 │
-├── src/
-|   ├── build_features.py
-|   ├── collect_data.py
-|   ├── collect_season_result.py
-|   ├── lap_time_model.py
-|   └── train_model.py
+├── build_features.py
+├── train_model.py
+├── lap_time_model.py
 │
 ├── models/
 │   ├── quali_top10_model.pkl
@@ -63,10 +62,7 @@ f1-predictor/
 │   ├── 2026_season_results.csv
 │   └── ...
 │
-├── templates/
-|   └── index.html
 └── static/
-    ├── app.js
     └── style.css
 ```
 

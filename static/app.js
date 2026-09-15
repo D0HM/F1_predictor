@@ -1,15 +1,25 @@
 const btn = document.getElementById("predict-btn");
+const gpSelect = document.getElementById("gp-select");
 const qualiList = document.getElementById("quali-list");
 const raceList = document.getElementById("race-list");
+const statusEl = document.getElementById("prediction-status");
 
-function rowsHtml(entries, probKey) {
+function safePct(value) {
+  return Math.max(0, Math.min(100, Math.round(Number(value || 0) * 100)));
+}
+
+function predictionRows(entries, probKey) {
   return entries.map(e => {
-    const pct = Math.round(e[probKey] * 100);
+    const pct = safePct(e[probKey]);
+    const lap = e.predicted_final_lap == null
+      ? ""
+      : `<span class="final-lap">Final lap ${Number(e.predicted_final_lap).toFixed(3)}s</span>`;
     return `
       <li class="rank-row">
         <div class="rank-driver">
-          <span class="code">${e.driver}</span>
+          <span class="code">P${e.position} ${e.driver}</span>
           <span class="team">${e.team}</span>
+          ${lap}
         </div>
         <div class="prob-bar-track"><div class="prob-bar-fill" style="width:${pct}%"></div></div>
         <span class="rank-prob">${pct}%</span>
@@ -17,90 +27,41 @@ function rowsHtml(entries, probKey) {
   }).join("");
 }
 
-btn.addEventListener("click", async () => {
-  btn.disabled = true;
-  btn.textContent = "Running...";
+if (btn) {
+  btn.addEventListener("click", async () => {
+    const gp = gpSelect.value;
+    if (!gp) return;
 
-  const grid_positions = {};
-  document.querySelectorAll(".roster-row").forEach(row => {
-    const driver = row.dataset.driver;
-    const val = row.querySelector(".grid-pos-input").value;
-    grid_positions[driver] = Number(val);
-  });
-
-  try {
-    const res = await fetch("/predict", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ grid_positions }),
-    });
-    const data = await res.json();
-
-    qualiList.innerHTML = rowsHtml(data.quali, "quali_top10_prob");
-    raceList.innerHTML = rowsHtml(data.race, "race_top10_prob");
-  } catch (err) {
-    qualiList.innerHTML = `<li class="placeholder">Prediction failed — check the server console.</li>`;
-    console.error(err);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = "Run prediction";
-  }
-});
-
-// --- Final Lap Time panel ---
-const lastlapBtn = document.getElementById("lastlap-btn");
-const raceSelect = document.getElementById("race-select");
-const lastlapTbody = document.getElementById("lastlap-tbody");
-const lastlapSummary = document.getElementById("lastlap-summary");
-
-if (lastlapBtn) {
-  lastlapBtn.addEventListener("click", async () => {
-    const selected = raceSelect.value;
-    if (!selected) return;
-    const [year, gp, session] = selected.split("|");
-
-    lastlapBtn.disabled = true;
-    lastlapBtn.textContent = "Analyzing...";
-    lastlapSummary.textContent = "";
-    lastlapTbody.innerHTML = `<tr><td colspan="7" class="placeholder">Training model...</td></tr>`;
+    btn.disabled = true;
+    btn.textContent = "Collecting FastF1 data...";
+    statusEl.textContent = "Collecting 2025 history and completed 2026 results. The first run can take several minutes.";
+    qualiList.innerHTML = `<li class="placeholder">Building 2026 driver form...</li>`;
+    raceList.innerHTML = `<li class="placeholder">Waiting for qualifying prediction...</li>`;
 
     try {
-      const res = await fetch("/predict_lastlap", {
+      const res = await fetch("/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ year: Number(year), gp, session }),
+        body: JSON.stringify({ year: 2026, gp })
       });
       const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Prediction failed.");
 
-      if (!res.ok) {
-        lastlapTbody.innerHTML = `<tr><td colspan="7" class="placeholder">${data.error || "Prediction failed."}</td></tr>`;
-        lastlapSummary.textContent = "";
-        return;
-      }
+      qualiList.innerHTML = predictionRows(data.quali, "quali_top10_prob");
+      raceList.innerHTML = predictionRows(data.race, "race_top10_prob");
 
-      lastlapSummary.textContent =
-        `Best model: ${data.best_model}  ·  MAE ${data.mae}s  ·  RMSE ${data.rmse}s  ·  R² ${data.r2}`;
-
-      lastlapTbody.innerHTML = data.drivers.map(d => {
-        const errClass = d.error >= 0 ? "error-positive" : "error-negative";
-        const errSign = d.error >= 0 ? "+" : "";
-        return `
-          <tr>
-            <td>${d.driver}</td>
-            <td>${d.team}</td>
-            <td>${d.compound}</td>
-            <td class="mono">${d.tyre_life}</td>
-            <td class="mono">${d.actual.toFixed(3)}s</td>
-            <td class="mono">${d.predicted.toFixed(3)}s</td>
-            <td class="mono ${errClass}">${errSign}${d.error.toFixed(3)}s</td>
-          </tr>`;
-      }).join("");
+      const lapStatus = data.final_lap?.available
+        ? ` Final-lap forecast uses ${data.final_lap.historical_year} ${data.gp} telemetry.`
+        : ` ${data.final_lap?.message || "Final-lap forecast unavailable."}`;
+      statusEl.textContent = `${data.gp} 2026 — history available before Round ${data.target_round}.${lapStatus}`;
     } catch (err) {
-      lastlapTbody.innerHTML = `<tr><td colspan="7" class="placeholder">Prediction failed — check the server console.</td></tr>`;
+      qualiList.innerHTML = `<li class="placeholder">${err.message}</li>`;
+      raceList.innerHTML = `<li class="placeholder">Prediction failed.</li>`;
+      statusEl.textContent = "";
       console.error(err);
     } finally {
-      lastlapBtn.disabled = false;
-      lastlapBtn.textContent = "Analyze final laps";
+      btn.disabled = false;
+      btn.textContent = "Predict 2026 Race";
     }
   });
 }
