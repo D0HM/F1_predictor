@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 2026 Predictor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">2026 Formula 1 Season</p>
+    <h1>F1 Race<br>Predictor</h1>
+    <p class="hero-sub">Select a 2026 Grand Prix. FastF1 automatically updates the results available before that round, calculates pre-race form, and predicts qualifying, race order, and final-lap time.</p>
+  </div>
+  <div class="hero-glow"></div>
+</header>
+
+<main class="dashboard">
+  <section class="panel roster-panel">
+    <h2>Race Selection</h2>
+    <p class="panel-hint">Only the current 2026 22-driver grid is eligible. Form is recalculated automatically for the selected race, so you do not need to maintain latest_form.csv.</p>
+    <label class="race-select-label">
+      <span>2026 Grand Prix</span>
+      <select id="gp-select">
+        {% for event in events %}
+        <option value="{{ event.gp }}">Round {{ event.round }} — {{ event.gp }}</option>
+        {% else %}
+        <option value="" disabled>No 2026 events found</option>
+        {% endfor %}
+      </select>
+    </label>
+    {% if schedule_error %}<p class="panel-hint">Could not load the 2026 schedule: {{ schedule_error }}</p>{% endif %}
+    <div id="prediction-status" class="panel-hint"></div>
+    <button id="predict-btn" class="predict-btn">Predict 2026 Race</button>
+  </section>
+
+  <section class="results">
+    <div class="panel results-panel">
+      <div class="panel-head"><h2>Qualifying</h2><span class="panel-tag tag-quali">P1–P22</span></div>
+      <ol class="ranked-list" id="quali-list"><li class="placeholder">Select a race and run the prediction.</li></ol>
+    </div>
+
+    <div class="panel results-panel">
+      <div class="panel-head"><h2>Race</h2><span class="panel-tag tag-race">P1–P22</span></div>
+      <p class="panel-hint">Race ranking uses predicted qualifying position as the grid input. The final-lap estimate is integrated into each driver's race result.</p>
+      <ol class="ranked-list" id="race-list"><li class="placeholder">Waiting for prediction.</li></ol>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Predictions use only information available before the selected race. Final-lap values are historical-model forecasts, not actual race results.</p>
+</footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
