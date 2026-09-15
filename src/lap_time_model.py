@@ -6,7 +6,8 @@ lap EXCEPT each driver's final lap, then predict specifically that final lap
 -- so the held-out test set is exactly the lap we care about, not a random
 sample of laps.
 
-Used by app.py's /predict_lastlap route. Can also be run standalone:
+Used by the race prediction app to forecast the selected event using the
+previous year's equivalent race. Can also be run standalone:
     python src/lap_time_model.py --year 2025 --gp Monaco --session R
 """
 import argparse
@@ -140,6 +141,18 @@ def predict_final_laps(year: int, gp: str, session: str) -> dict:
             for _, row in report.iterrows()
         ],
     }
+
+
+def forecast_previous_year_final_laps(year: int, gp: str) -> dict:
+    """Return model-based final-lap forecasts from the previous year's equivalent race.
+
+    This is used for a future-race prediction. The historical model is trained and
+    evaluated on the previous year's race, then its per-driver estimates are used as
+    the historical baseline for the selected race. The function deliberately does not
+    require a current-race CSV because the selected race may not have happened yet.
+    """
+    previous_year = int(year) - 1
+    return predict_final_laps(previous_year, gp, "R")
 
 
 if __name__ == "__main__":

@@ -154,40 +154,65 @@ def get_form_before_race(year, gp):
 
 
 def get_final_lap_estimates(previous_year, gp, race_ranked):
-    """Use the previous year's equivalent race as a final-lap forecast baseline.
+    """Return a final-lap forecast for every predicted 2026 race driver.
 
-    The existing lap-time model predicts held-out final laps from historical
-    telemetry. For 2026, its driver estimates are mapped to the current grid;
-    a current-team median is used for a driver without a matching 2025 entry.
+    The app automatically collects the previous year's equivalent race if that
+    lap-level CSV is not already present. The existing final-lap ML routine then
+    trains/evaluates on that historical race and supplies a baseline estimate.
+    Current 2026 drivers are mapped by driver first, then by normalized team,
+    then by the historical global median.
     """
+    if lap_time_model is None:
+        raise RuntimeError("lap_time_model.py is required for final-lap forecasting.")
+
+    csv_path = os.path.join(
+        DATA_DIR, f"{previous_year}_{gp.replace(' ', '_')}_R.csv"
+    )
+
+    # Automatically collect the previous year's equivalent race when needed.
+    if not os.path.exists(csv_path):
+        app.logger.info("Collecting %s %s race telemetry for final-lap forecast", previous_year, gp)
+        df = collect_data.collect(previous_year, gp, "R")
+        os.makedirs(DATA_DIR, exist_ok=True)
+        df.to_csv(csv_path, index=False)
+
+    historical = lap_time_model.predict_final_laps(previous_year, gp, "R")
+    rows = historical.get("drivers", [])
+    if not rows:
+        raise ValueError(f"No historical final-lap estimates available for {gp} {previous_year}.")
+
+    def norm_team(team):
+        t = str(team).strip().lower()
+        aliases = {
+            "rb": "racing bulls",
+            "racing bulls": "racing bulls",
+            "kick sauber": "audi",
+            "sauber": "audi",
+            "audi": "audi",
+            "haas": "haas",
+            "haas f1 team": "haas",
+            "red bull racing": "red bull racing",
+            "red bull": "red bull racing",
+        }
+        return aliases.get(t, t)
+
+    by_driver = {str(r["driver"]): float(r["predicted"]) for r in rows}
+    team_values = {}
+    for r in rows:
+        team_values.setdefault(norm_team(r["team"]), []).append(float(r["predicted"]))
+    team_medians = {k: float(np.median(v)) for k, v in team_values.items() if v}
+    global_value = float(np.median(list(by_driver.values())))
+
     estimates = {}
-    try:
-        if lap_time_model is None:
-            raise RuntimeError("lap_time_model.py is not available")
-
-        historical = lap_time_model.predict_final_laps(previous_year, gp, "R")
-        rows = historical.get("drivers", [])
-        by_driver = {str(r["driver"]): float(r["predicted"]) for r in rows}
-
-        team_values = {}
-        for r in rows:
-            team_values.setdefault(str(r["team"]), []).append(float(r["predicted"]))
-        team_medians = {k: float(np.median(v)) for k, v in team_values.items() if v}
-
-        global_value = float(np.median(list(by_driver.values()))) if by_driver else np.nan
-        for r in race_ranked:
-            if r["driver"] in by_driver:
-                estimates[r["driver"]] = by_driver[r["driver"]]
-            elif r["team"] in team_medians:
-                estimates[r["driver"]] = team_medians[r["team"]]
-            else:
-                estimates[r["driver"]] = global_value
-    except Exception as exc:
-        app.logger.warning("Final-lap forecast fallback: %s", exc)
-        # If the historical telemetry/model is unavailable, keep the race
-        # prediction usable and report no fabricated time.
-        for r in race_ranked:
-            estimates[r["driver"]] = None
+    for r in race_ranked:
+        driver = str(r["driver"])
+        team = norm_team(r["team"])
+        if driver in by_driver:
+            estimates[driver] = by_driver[driver]
+        elif team in team_medians:
+            estimates[driver] = team_medians[team]
+        else:
+            estimates[driver] = global_value
 
     return estimates
 
