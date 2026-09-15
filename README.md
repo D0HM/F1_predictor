@@ -46,13 +46,13 @@ The project should have a structure similar to:
 f1-predictor/
 │
 ├── app.py
-├── collect_data.py
-├── index.html
-├── app.js
 │
-├── build_features.py
-├── train_model.py
-├── lap_time_model.py
+├── src/
+|   ├── build_features.py
+|   ├── collect_data.py
+|   ├── collect_season_result.py
+|   ├── lap_time_model.py
+|   └── train_model.py
 │
 ├── models/
 │   ├── quali_top10_model.pkl
@@ -63,7 +63,10 @@ f1-predictor/
 │   ├── 2026_season_results.csv
 │   └── ...
 │
+├── templates/
+|   └── index.html
 └── static/
+    ├── app.js
     └── style.css
 ```
 
