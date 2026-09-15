@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marina Bay Predictor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Marina Bay Street Circuit</p>
+    <h1>Singapore GP<br>Top&nbsp;10 Predictor</h1>
+    <p class="hero-sub">Rolling driver form and team pace, run through a pair of trained classifiers to estimate who makes the top 10 under the lights.</p>
+  </div>
+  <div class="hero-glow"></div>
+</header>
+
+<main class="dashboard">
+
+  <section class="panel roster-panel">
+    <h2>Grid</h2>
+    <p class="panel-hint">Adjust an assumed qualifying/grid position to see how it shifts a driver's race odds.</p>
+    <div class="roster-list" id="roster-list">
+      {% for d in drivers %}
+      <div class="roster-row" data-driver="{{ d.Driver }}">
+        <div class="roster-id">
+          <span class="driver-code">{{ d.Driver }}</span>
+          <span class="team-name">{{ d.Team }}</span>
+        </div>
+        <label class="grid-input">
+          <span>Grid</span>
+          <input type="number" min="1" max="20" value="{{ d.DriverAvgRace_form | round(0, 'floor') }}" class="grid-pos-input">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+    <button id="predict-btn" class="predict-btn">Run prediction</button>
+  </section>
+
+  <section class="results">
+    <div class="panel results-panel" id="quali-panel">
+      <div class="panel-head">
+        <h2>Qualifying</h2>
+        <span class="panel-tag tag-quali">Top 10</span>
+      </div>
+      <ol class="ranked-list" id="quali-list">
+        <li class="placeholder">Run a prediction to see the order.</li>
+      </ol>
+    </div>
+
+    <div class="panel results-panel" id="race-panel">
+      <div class="panel-head">
+        <h2>Race</h2>
+        <span class="panel-tag tag-race">Top 10</span>
+      </div>
+      <ol class="ranked-list" id="race-list">
+        <li class="placeholder">Run a prediction to see the order.</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<section class="lastlap-wrap">
+  <div class="panel lastlap-panel">
+    <div class="panel-head">
+      <h2>Final Lap Time</h2>
+      <span class="panel-tag tag-lap">Per driver</span>
+    </div>
+    <p class="panel-hint">
+      Pick a race that's already been collected with <code>collect_data.py</code>, and the model
+      trains on every lap except each driver's last one, then predicts that final lap specifically.
+    </p>
+
+    <div class="lastlap-controls">
+      <label class="race-select-label">
+        <span>Race</span>
+        <select id="race-select">
+          {% for r in races %}
+          <option value="{{ r.year }}|{{ r.gp }}|{{ r.session }}">{{ r.gp }} {{ r.year }} ({{ r.session }})</option>
+          {% else %}
+          <option value="" disabled>No collected races found in data/</option>
+          {% endfor %}
+        </select>
+      </label>
+      <button id="lastlap-btn" class="predict-btn lastlap-btn">Analyze final laps</button>
+    </div>
+
+    <p id="lastlap-summary" class="lastlap-summary"></p>
+
+    <div class="lastlap-table-wrap">
+      <table class="lastlap-table" id="lastlap-table">
+        <thead>
+          <tr>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Compound</th>
+            <th>Tyre life</th>
+            <th>Actual</th>
+            <th>Predicted</th>
+            <th>Error</th>
+          </tr>
+        </thead>
+        <tbody id="lastlap-tbody">
+          <tr><td colspan="7" class="placeholder">Select a race and click "Analyze final laps".</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Trained on rolling driver &amp; team form via FastF1 historical data. Not betting advice — street circuits are chaos.</p>
+</footer>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
